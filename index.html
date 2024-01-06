@@ -1,0 +1,50 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Circular Menu</title>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css" integrity="sha384-ejwKkLla8gPP8t2u0eQyL0Q/4ItcnyveF505U0NIobD/SMsNyXrLti6CWaD0L52l" crossorigin="anonymous">
+    <!-- css -->
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="menu">
+        <div class="toggle"><i class="bi bi-plus"></i></div>
+        <li style="--i:0;">
+            <a href="#"><i class="bi bi-house-door"></i></a>
+        </li>
+        <li style="--i:1;">
+            <a href="#"><i class="bi bi-person"></i></a>
+        </li>
+        <li style="--i:2;">
+            <a href="#"><i class="bi bi-gear"></i></a>
+        </li>
+        <li style="--i:3;">
+            <a href="#"><i class="bi bi-envelope"></i></a>
+        </li>
+        <li style="--i:4;">
+            <a href="#"><i class="bi bi-key"></i></a>
+        </li>
+        <li style="--i:5;">
+            <a href="#"><i class="bi bi-camera-video"></i></a>
+        </li>
+        <li style="--i:6;">
+            <a href="#"><i class="bi bi-controller"></i></a>
+        </li>
+        <li style="--i:7;">
+            <a href="#"><i class="bi bi-camera"></i></a>
+        </li>
+    </div>
+    <script>
+        let toggle = document.querySelector('.toggle');
+        let menu = document.querySelector('.menu');
+        toggle.onclick = function () {
+            menu.classList.toggle('active')
+        }
+    </script>
+</body>
+</html>
